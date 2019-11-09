@@ -1,8 +1,9 @@
 import pandas as pd
 
-df =pd.read_csv('data/ministers.py')
+
 
 def returnDetails(ministerName):
+    df = pd.read_csv('data/ministers.py')
     row = df.loc[df['Name'] == ministerName]
     name = ministerName
     party = row['Party'].to_list()[0]
