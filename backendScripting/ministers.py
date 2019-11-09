@@ -1,5 +1,7 @@
 import pandas as pd
 
+df =pd.read_csv('data/ministers.py')
+
 def returnDetails(ministerName):
     row = df.loc[df['Name'] == ministerName]
     name = ministerName
