@@ -13,7 +13,7 @@ class User(object):
 		""" Adding user details to a file"""
 
 
-		with open("users.csv", "a", newline='') as fp:
+		with open("data/users.csv", "a", newline='') as fp:
 			wr = csv.writer(fp)
 			wr.writerow((self.userName, self.userCauses))
 
