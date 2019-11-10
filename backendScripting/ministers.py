@@ -1,7 +1,7 @@
 import pandas as pd
 import ast
 def returnDetails(ministerName):
-    ministerName = 'Narendra Modi'
+    #ministerName = 'Narendra Modi'
     row = checkDf.loc[df['Name'] == ministerName]
     name = ministerName
     party = row['Party'].to_list()[0]
