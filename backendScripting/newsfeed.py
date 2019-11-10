@@ -21,3 +21,7 @@ def viewNewsArticles(topicArray,count = 50):
             if newsMatchedforTopic >=count:
                 break
     return newsfeed
+
+def returnRank(topic):
+    df =pd.read_csv('data/Ranked List.csv')
+    return ast.literal_eval(((df.loc[df['topics'] == topic]['ministers']).to_dict()[1]))
